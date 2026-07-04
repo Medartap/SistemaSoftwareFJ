@@ -137,8 +137,8 @@ logs/errores.log
 - Medardo Tabares Prieto
   - C.C. 1122647056
 
-- Integrante 2
-  - Pendiente
+- Oscar Julian Roman
+  - C.C 16378190
 
 - Integrante 3
   - Pendiente
