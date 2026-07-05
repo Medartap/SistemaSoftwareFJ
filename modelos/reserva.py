@@ -1,12 +1,11 @@
 # Archivo: reserva.py
-# Descripción: Clase que administra las reservas del sistema.
-# Importa la clase Cliente.
+# Descripción: Implementación de la clase Reserva para gestionar las reservas del sistema.
 from modelos.cliente import Cliente
 # Importa la clase Servicio.
 from modelos.servicio import Servicio
 
 # __________________Clase Reserva.___________________
-class Reserva:
+class Reserva: # Clase encargada de crear, confirmar y procesar las reservas.
     # Constructor.
     def __init__(self, cliente, servicio, duracion):
        
@@ -46,3 +45,4 @@ class Reserva:
             f"Duración: {self.duracion}\n"
             f"Estado: {self.estado}"
         )
+    
