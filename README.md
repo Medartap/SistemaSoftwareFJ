@@ -142,6 +142,9 @@ logs/errores.log
 
 - Oscar Julian Roman
   - C.C. 16378190
+    
+- Jhon Jairo Pedroza Saldaña
+  - C.C. 94501854
 
 ---
 
