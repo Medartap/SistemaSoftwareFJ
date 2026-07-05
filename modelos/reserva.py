@@ -3,6 +3,7 @@
 from modelos.cliente import Cliente
 # Importa la clase Servicio.
 from modelos.servicio import Servicio
+from excepciones.excepciones import ReservaEstadoError
 
 # __________________Clase Reserva.___________________
 class Reserva: # Clase encargada de crear, confirmar y procesar las reservas.
@@ -25,13 +26,24 @@ class Reserva: # Clase encargada de crear, confirmar y procesar las reservas.
         
         self.estado = "Pendiente" # Estado inicial de la reserva.
     
-    def confirmar(self): # Confirma la reserva.
+    def confirmar(self):
 
-        self.estado = "Confirmada"
+     if self.estado == "Cancelada":
+        raise ReservaEstadoError(
+            "No se puede confirmar una reserva que ya fue cancelada."
+        )
+
+     self.estado = "Confirmada"
+        
     
-    def cancelar(self): # Cancela la reserva.
+    def cancelar(self):
 
-        self.estado = "Cancelada"
+     if self.estado == "Confirmada":
+        raise ReservaEstadoError(
+            "No se puede cancelar una reserva que ya fue confirmada."
+        )
+
+     self.estado = "Cancelada"
    
     def procesar(self):  # Procesa la reserva.
 

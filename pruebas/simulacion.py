@@ -8,6 +8,7 @@ from modelos.alquiler_equipo import AlquilerEquipo # Importa la clase AlquilerEq
 from modelos.asesoria import Asesoria # Importa la clase Asesoria.
 from modelos.reserva import Reserva # Importa la clase Reserva.
 from util.logger import registrar_error # Importa la función que guarda los errores en el archivo errores.log.
+from excepciones.excepciones import ReservaEstadoError
 
 # _____________Función: ejecutar_simulacion()_________________
 # Descripción: Ejecuta una serie de operaciones para demostrar el funcionamiento
@@ -261,11 +262,47 @@ def ejecutar_simulacion():
         
         print(Style.RESET_ALL) # Restablece el color normal de la consola.
 
-    # ___________________OPERACIÓN 10____________________________
+           
+       # ---------------- OPERACIÓN 10 ----------------
+    # Verifica que no se pueda confirmar una reserva cancelada.
+
+    try:
+
+        cliente_prueba = Cliente(
+        "CLI999",
+        "Cliente Prueba",
+        "123456789",
+        "prueba@softwarefj.com",
+        "3000000000"
+        )
+        servicio_prueba = ReservaSala(
+            "SER999",
+        "Sala Prueba",
+        100000,
+        20
+        )
+
+        reserva = Reserva(
+            cliente_prueba,
+        servicio_prueba,
+        2
+        )
+
+        reserva.cancelar()
+        reserva.confirmar()
+
+    except ReservaEstadoError as error:
+
+        print(Fore.RED + "✘ Operación 10: Error controlado.")
+        print(f"Detalle: {error}")
+
+    finally:
+
+        print(Style.RESET_ALL)
+
+# ___________________OPERACIÓN 11____________________________
     # Verifica que el sistema continúa funcionando después
     # de ejecutar todas las operaciones de la simulación.
-   
-    # Muestra un mensaje indicando que la simulación finalizó correctamente.
     print(Fore.GREEN)
     print("=" * 60)
     print("SIMULACIÓN FINALIZADA CORRECTAMENTE")
@@ -273,5 +310,5 @@ def ejecutar_simulacion():
     print("El sistema continúa funcionando después de los errores.")
     print("=" * 60)
     print(Style.RESET_ALL)
-    
-input("\nPresione ENTER para volver al menú...") # Espera a que el usuario lea los resultados.
+
+    input("\nPresione ENTER para volver al menú...")
