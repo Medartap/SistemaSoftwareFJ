@@ -137,8 +137,8 @@ logs/errores.log
 - Medardo Tabares Prieto
   - C.C. 1122647056
 
-- Integrante 2
-  - Pendiente
+- Juan Manue Guerrero Lozano
+  - C.C. 1080044797
 
 - Integrante 3
   - Pendiente
