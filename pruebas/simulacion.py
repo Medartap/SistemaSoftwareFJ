@@ -1,5 +1,5 @@
 # Archivo: simulacion.py
-# Descripción: Ejecuta la simulación de las operaciones del sistema Software FJ.
+# Descripción: Simulación completa para validar el funcionamiento del sistema Software FJ.
 
 from colorama import Fore, Style # Importa la librería Colorama para mostrar mensajes con colores.
 from modelos.cliente import Cliente # Importa la clase Cliente.
