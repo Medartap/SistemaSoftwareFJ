@@ -1,5 +1,5 @@
 # Archivo: excepciones.py
-# Descripción: Excepciones personalizadas del sistema.
+# Contiene las excepciones personalizadas del sistema Software FJ.
 
 # ________Excepción para errores relacionados con clientes______
 class ClienteError(Exception):
