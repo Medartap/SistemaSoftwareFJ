@@ -148,3 +148,9 @@ logs/errores.log
 ## Licencia
 
 Proyecto desarrollado con fines académicos.
+
+---
+
+## Estado del proyecto
+
+Proyecto finalizado y entregado para la Fase 4 del curso de Programación Orientada a Objetos.
