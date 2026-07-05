@@ -140,8 +140,8 @@ logs/errores.log
 - Juan Manue Guerrero Lozano
   - C.C. 1080044793
 
-- Integrante 3
-  - Pendiente
+- Oscar Julian Roman
+  - C.C. 16378190
 
 ---
 
