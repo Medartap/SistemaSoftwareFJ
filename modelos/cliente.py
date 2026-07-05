@@ -1,10 +1,10 @@
 # Archivo: cliente.py
-# Descripción: Clase que representa un cliente del sistema.
+# Descripción: Implementación de la clase Cliente del sistema Software FJ.
 # Importa la clase Entidad.
 from modelos.entidad import Entidad
 
 # ________________Clase Cliente que hereda de Entidad_______________
-class Cliente(Entidad):
+class Cliente(Entidad): # Clase encargada de almacenar y validar la información de los clientes.
 
     # Constructor de la clase.
     def __init__(self, codigo, nombre, documento, correo, telefono):
