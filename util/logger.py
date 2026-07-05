@@ -1,5 +1,5 @@
 # Archivo: logger.py
-# Descripción: Registra los errores del sistema en un archivo.
+# Descripción: Implementación del sistema de registro de errores mediante logging.
 # Importa la librería logging.
 import logging
 
