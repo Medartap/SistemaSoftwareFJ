@@ -138,7 +138,7 @@ logs/errores.log
   - C.C. 1122647056
 
 - Juan Manue Guerrero Lozano
-  - C.C. 1080044797
+  - C.C. 1080044793
 
 - Integrante 3
   - Pendiente
