@@ -1,5 +1,5 @@
 # Archivo: servicio.py
-# Descripción: Clase abstracta para los servicios del sistema.
+# Descripción: Implementación de la clase abstracta Servicio del sistema Software FJ.
 # Importa la clase abstracta Entidad.
 
 from modelos.entidad import Entidad
@@ -9,7 +9,7 @@ from abc import abstractmethod
 
 
 # ____________________Clase abstracta Servicio_________________________
-class Servicio(Entidad):
+class Servicio(Entidad): # Clase base para todos los servicios ofrecidos por el sistema.
 
     # Constructor.
     def __init__(self, codigo, nombre, costo_base):
